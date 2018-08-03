@@ -15,6 +15,6 @@ git pull origin master
 npm install
 cp .env.example .env
 npm run sequelize db:migrate
-npm run sequelize db:seed:undo:all
+npm run truncate
 npm run sequelize db:seed:all
 npm start
