@@ -11,6 +11,7 @@ services:
       - 3306
   api:
     image: davidcostadev/mymoney-api-image
+    # build: .
     ports:
       - 3000:3000
     depends_on:
