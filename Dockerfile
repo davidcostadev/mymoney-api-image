@@ -1,12 +1,12 @@
-FROM node:10
-WORKDIR /usr/src/app
+    FROM node:10
+    WORKDIR /usr/src/app
 
-RUN apt update
-RUN apt install netcat -y
-RUN git clone https://github.com/davidcostadev/mymoney.git .
+    RUN apt update
+    RUN apt install netcat -y
+    RUN git clone https://github.com/davidcostadev/api-withmoney.git .
 
-ADD start.sh /usr/src/app/start.sh
+    ADD start.sh /usr/src/app/start.sh
 
-EXPOSE 3000
+    EXPOSE 3000
 
-CMD ["sh", "/usr/src/app/start.sh"]
+    CMD ["sh", "/usr/src/app/start.sh"]
